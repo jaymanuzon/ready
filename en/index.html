@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<title>KI ready? · Der Selbst-Check für dein Leben · by Vantum</title>
-<meta name="description" content="Ein ehrlicher Selbsttest in 10 Minuten: Wie viel Potenzial hat KI für dein Leben—Alltag, Lernen, Sicherheit, Zukunft? Sofortige Auswertung, per Mail zum Nachlesen.">
+<title>AI ready? · The self-check for your life · by Vantum</title>
+<meta name="description" content="An honest self-check in 10 minutes: How much potential does AI hold for your life—everyday tasks, learning, safety, your future? Instant results, sent by email so you can revisit them.">
 <link rel="alternate" hreflang="de" href="https://ready.aivantum.com/">
 <link rel="alternate" hreflang="en" href="https://ready.aivantum.com/en/">
 <link rel="alternate" hreflang="x-default" href="https://ready.aivantum.com/">
@@ -103,7 +103,7 @@ header.mast .rings circle{fill:none;stroke-width:1.5}
 .mast .lead{font-size:clamp(1.05rem,2vw,1.22rem);color:var(--body-strong);max-width:56ch;position:relative;z-index:1}
 .mast h1{position:relative;z-index:1;max-width:20ch}
 
-/* ===== Sprachumschalter ===== */
+/* ===== Language switch ===== */
 .lang-switch{position:absolute;top:16px;right:16px;display:flex;gap:.35em;align-items:center;font-family:var(--font-mono,monospace);font-size:.78rem;letter-spacing:.06em;z-index:6}
 .lang-switch a{color:var(--muted,#78756b);text-decoration:none;padding:2px 7px;border-radius:var(--r-xs,6px);line-height:1.6}
 .lang-switch a:hover{color:var(--brand,#204e45)}
@@ -161,20 +161,20 @@ header.mast .rings circle{fill:none;stroke-width:1.5}
 .badge.warn{background:var(--gelb-soft);color:var(--gelb-text)}
 .badge.danger{background:var(--rot-soft);color:var(--rot-text)}
 
-/* ===== Meta grid (Zweck/Dauer/Fuer wen) ===== */
+/* ===== Meta grid (Purpose/Duration/Who it's for) ===== */
 .meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:24px 0}
 .meta-grid .card{margin:0;padding:20px 22px}
 .meta-grid h3{font-family:var(--font-body);font-size:.72rem;text-transform:uppercase;
   letter-spacing:1px;color:var(--brand-ink);margin:0 0 8px;font-weight:700}
 .meta-grid p{font-size:.94rem;margin:0;color:var(--body)}
 
-/* ===== Skala-Legende ===== */
+/* ===== Scale legend ===== */
 .legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:16px 0 0}
 .legend .lg{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-sm);
   padding:11px 13px;font-size:.82rem;color:var(--body)}
 .legend .lg b{display:block;font-family:var(--font-mono);color:var(--brand);font-size:1.15rem;margin-bottom:2px}
 
-/* ===== Fragebogen ===== */
+/* ===== Questionnaire ===== */
 section.dim{margin:44px 0}
 .dim-head{display:flex;align-items:center;gap:16px;flex-wrap:wrap;
   border-bottom:1px solid var(--line-strong);padding-bottom:14px;margin-bottom:8px}
@@ -188,8 +188,8 @@ fieldset.item{border:1px solid var(--line);border-radius:var(--r-lg);background:
   padding:20px 22px;margin:16px 0;box-shadow:var(--shadow-xs);min-inline-size:0;
   transition:box-shadow .2s var(--ease),border-color .2s var(--ease)}
 fieldset.item:focus-within{border-color:var(--brand-soft-2);box-shadow:var(--shadow-sm)}
-/* Legend normalisieren: aus der Rahmenlinie in den normalen Fluss holen, damit
-   lange Fragetexte NIE aus der Karte laufen (robuster iOS-tauglicher Fix, alle Viewports). */
+/* Normalise the legend: pull it out of the frame line into normal flow so that
+   long question texts NEVER run out of the card (robust iOS-safe fix, all viewports). */
 fieldset.item legend{float:left;width:100%;padding:0;margin:0 0 14px;
   font-weight:500;font-size:1.02rem;line-height:1.45;color:var(--body-strong)}
 fieldset.item legend+*{clear:both}
@@ -222,7 +222,7 @@ fieldset.item .rk{display:inline-block;font-family:var(--font-body);font-size:.6
 .dial .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px}
 .dial .num b{font-family:var(--font-mono);font-size:1.8rem;font-weight:500;color:var(--ink);line-height:1}
 .dial .num span{font-size:.62rem;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}
-/* legacy ampel-dot bleibt fuer JS-Kompatibilitaet, versteckt zugunsten des Dials */
+/* legacy ampel-dot kept for JS compatibility, hidden in favour of the dial */
 .ampel-dot{display:none}
 
 .heat{display:grid;gap:10px;margin:18px 0 4px}
@@ -265,7 +265,7 @@ footer a:hover{color:var(--brand-ink)}
   .card,.callout,fieldset.item,.heat .row{break-inside:avoid;box-shadow:none}
 }
 
-/* ===== Email-Gate (Overlay) ===== */
+/* ===== Email gate (overlay) ===== */
 .gate-overlay{position:fixed;inset:0;z-index:100;background:rgba(22,33,30,.55);
   backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
   display:none;align-items:center;justify-content:center;padding:20px}
@@ -290,7 +290,7 @@ footer a:hover{color:var(--brand-ink)}
 .gate .fine{font-size:.76rem;color:var(--muted);margin:16px 0 0;line-height:1.5}
 #report-live[hidden]{display:none}
 
-/* ===== Vertiefen-Vorschau (Hover-Teaser) ===== */
+/* ===== Going-deeper preview (hover teaser) ===== */
 .vt-dims{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 4px}
 .vt-dims button{border:1.5px solid var(--line-strong);background:var(--surface);border-radius:var(--r-pill);
   padding:8px 15px;font:inherit;font-size:.86rem;font-weight:500;color:var(--body-strong);cursor:pointer;
@@ -314,7 +314,7 @@ footer a:hover{color:var(--brand-ink)}
 .vt-note{background:var(--accent-soft);border-radius:var(--r-sm);padding:12px 15px;font-size:.86rem;color:var(--accent-ink);margin:16px 0 0}
 
 /* ============================================================
-   MOBILE — echte 390px, kein Overflow, tappbare Skala
+   MOBILE — real 390px, no overflow, tappable scale
    ============================================================ */
 @media (max-width:640px){
   .wrap{padding:0 18px}
@@ -324,17 +324,17 @@ footer a:hover{color:var(--brand-ink)}
   .vt-bar{grid-template-columns:96px 1fr 34px;gap:9px;font-size:.8rem}
   .vt-preview{padding:20px 18px}
   .vt-preview .vt-sticker{right:-54px;padding:6px 64px}
-  /* Skala: 5 gleiche Spalten bleiben (grid overflowt nie), Text kompakter */
+  /* Scale: keep 5 equal columns (grid never overflows), tighter text */
   .scale{gap:6px}
   .scale label{padding:11px 2px 9px;font-size:.6rem;gap:4px;border-radius:var(--r-sm)}
   .scale label .v{font-size:1.1rem}
   .heat .row{grid-template-columns:16px 1fr auto;gap:11px;padding:12px 13px}
 }
 @media (max-width:400px){
-  .scale label{font-size:0}                 /* Mikro-Screens: nur die Ziffer, kein Überlauf */
+  .scale label{font-size:0}                 /* micro screens: digit only, no overflow */
   .scale label .v{font-size:1.15rem}
 }
-/* Overflow-Schutz global */
+/* Global overflow guard */
 html,body{overflow-x:hidden}
 img,svg{max-width:100%}
 
@@ -343,7 +343,7 @@ img,svg{max-width:100%}
   .track>i,.dial .ring-fg,.vt-bar .track>i{transition:none}
 }
 
-/* Kontext-Vorabfragen (optional, Jay-Feedback 03.07.) */
+/* Optional context questions (Jay feedback 03.07.) */
 .ctx-row{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;margin-top:14px}
 .ctx-lab{font-weight:600;color:var(--body-strong);min-width:190px;font-size:.95rem}
 .ctx-opts{display:flex;flex-wrap:wrap;gap:8px}
@@ -357,9 +357,9 @@ img,svg{max-width:100%}
 
 <header class="mast">
   <div class="lang-switch" role="navigation" aria-label="Language / Sprache">
-    <a href="/" hreflang="de" class="is-active" aria-current="true">DE</a>
+    <a href="/" hreflang="de">DE</a>
     <span aria-hidden="true">·</span>
-    <a href="/en/" hreflang="en">EN</a>
+    <a href="/en/" hreflang="en" class="is-active" aria-current="true">EN</a>
   </div>
   <svg class="rings" viewBox="0 0 420 420" aria-hidden="true">
     <circle cx="210" cy="210" r="60"  stroke="var(--brand-soft-2)"/>
@@ -370,17 +370,17 @@ img,svg{max-width:100%}
   </svg>
   <div class="wrap">
     <span class="brand-chip"><span class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6"/></svg></span>by Vantum</span>
-    <h1>KI ready?</h1>
-    <p class="lead">Der ehrliche Selbst-Check in 10 Minuten: Nutzt du schon, was KI dir heute schenken kann — im Alltag, beim Lernen, für deine Zukunft? Und wo liegt dein nächster einfacher Schritt?</p>
+    <h1>AI ready?</h1>
+    <p class="lead">The honest self-check in 10 minutes: Are you already using what AI can give you today — in everyday life, in learning, for your future? And where does your next simple step lie?</p>
   </div>
 </header>
 
-<!-- Sticky-Fortschritt: nur mit JS sinnvoll -->
+<!-- Sticky progress: only useful with JS -->
 <div class="progress-bar js-only" id="progress">
   <div class="wrap">
-    <b id="progress-text">0 / 30 beantwortet</b>
+    <b id="progress-text">0 / 30 answered</b>
     <span class="track"><i id="progress-fill"></i></span>
-    <button class="btn" id="eval-btn" type="button" disabled>Auswertung anzeigen</button>
+    <button class="btn" id="eval-btn" type="button" disabled>Show my results</button>
   </div>
 </div>
 
@@ -388,140 +388,140 @@ img,svg{max-width:100%}
 
   <!-- ===== INTRO ===== -->
   <section class="card accent-top" id="intro">
-    <p class="overline">KI im Leben · Selbst-Check</p>
-    <h2>Worum es geht</h2>
-    <p>„Verpasse ich bei KI gerade etwas?“ — diese Frage treibt gerade fast jeden um. Dieser Check übersetzt sie in eine sortierte Sicht: Über fünf Lebensbereiche hinweg zeigt er, wo KI dir heute schon Zeit und Klarheit schenken könnte und wo dein nächster einfacher Schritt liegt. Am Ende bekommst du eine Gesamt-Einordnung, eine Heatmap je Bereich und deine persönlichen Hebel — sofort, ohne Wartezeit.</p>
+    <p class="overline">AI in your life · Self-check</p>
+    <h2>What this is about</h2>
+    <p>“Am I missing out on AI right now?” — almost everyone is asking themselves that question at the moment. This check turns it into an organised view: across five areas of life, it shows where AI could already give you time and clarity today, and where your next simple step lies. At the end you get an overall picture, a heatmap for each area and your personal levers — instantly, no waiting.</p>
     <div class="meta-grid">
-      <div class="card"><h3>Zweck</h3><p>Standortbestimmung, kein Zeugnis. Eine erste, ehrliche Sicht darauf, wo KI dein Leben leichter machen kann.</p></div>
-      <div class="card"><h3>Dauer</h3><p>Etwa 10 Minuten. 30 Aussagen, jeweils auf einer Skala von 1 bis 5.</p></div>
-      <div class="card"><h3>Für wen</h3><p>Für dich persönlich — egal ob du KI täglich nutzt oder bisher nur davon hörst. Es gibt keine falschen Antworten.</p></div>
+      <div class="card"><h3>Purpose</h3><p>An orientation, not a report card. A first, honest look at where AI can make your life easier.</p></div>
+      <div class="card"><h3>Duration</h3><p>About 10 minutes. 30 statements, each on a scale from 1 to 5.</p></div>
+      <div class="card"><h3>Who it's for</h3><p>For you personally — whether you use AI daily or have only heard about it so far. There are no wrong answers.</p></div>
     </div>
     <div class="callout warn">
-      <strong>Was dieser Test bewusst nicht kann — und das ist Absicht.</strong> Er misst, wie du dich selbst siehst, nicht wie es objektiv ist. Er verkauft dir nichts und er bewertet dich nicht — er sortiert. Was du daraus machst, entscheidest du. Am Ende zeigen wir dir einen möglichen nächsten Schritt; mehr nicht.
+      <strong>What this test deliberately can't do — and that's intentional.</strong> It measures how you see yourself, not how things objectively are. It doesn't sell you anything and it doesn't judge you — it sorts. What you make of it is up to you. At the end we show you one possible next step; nothing more.
     </div>
   </section>
 
-  <!-- ===== SKALEN-LEGENDE ===== -->
+  <!-- ===== SCALE LEGEND ===== -->
   <section class="card" id="skala">
-    <h3>So antwortest du</h3>
-    <p>Jede Aussage bewertest du auf einer Skala von 1 (trifft überhaupt nicht zu) bis 5 (trifft voll zu). Wenn du es nicht einschätzen kannst, ist das die 1 — auch das ist eine ehrliche Antwort.</p>
+    <h3>How to answer</h3>
+    <p>You rate each statement on a scale from 1 (doesn't apply at all) to 5 (fully applies). If you can't judge it, that's a 1 — and that's an honest answer too.</p>
     <div class="legend">
-      <div class="lg"><b>1</b>Trifft überhaupt nicht zu / weiß ich nicht</div>
-      <div class="lg"><b>2</b>Trifft eher nicht zu</div>
-      <div class="lg"><b>3</b>Teils, teils</div>
-      <div class="lg"><b>4</b>Trifft eher zu</div>
-      <div class="lg"><b>5</b>Trifft voll zu / etabliert</div>
+      <div class="lg"><b>1</b>Doesn't apply at all / I don't know</div>
+      <div class="lg"><b>2</b>Mostly doesn't apply</div>
+      <div class="lg"><b>3</b>Partly applies</div>
+      <div class="lg"><b>4</b>Mostly applies</div>
+      <div class="lg"><b>5</b>Fully applies / well established</div>
     </div>
-    <p style="margin-top:14px"><small>Mit <span class="rk" style="font-size:.6rem">umgepolt</span> markierte Aussagen sind bewusst gegenläufig formuliert: dort bedeutet hohe Zustimmung wenig genutztes Potenzial. Sie werden in der Auswertung automatisch umgerechnet (<code>6 − Wert</code>) — Sie müssen nichts umdenken, einfach ehrlich antworten.</small></p>
+    <p style="margin-top:14px"><small>Statements marked <span class="rk" style="font-size:.6rem">reverse-scored</span> are deliberately worded the other way round: there, strong agreement means untapped potential. They are converted automatically in the assessment (<code>6 − value</code>) — no need to think backwards, just answer honestly.</small></p>
   </section>
 
   <form id="check">
 
   <!-- ===== DIMENSION 1 ===== -->
   <section class="card" id="kontext">
-    <h3>Kurz vorab — zwei Klicks für die Einordnung</h3>
-    <p><small>Optional. Hilft aber, deine Auswertung und den passenden nächsten Schritt richtig einzuordnen.</small></p>
-    <div class="ctx-row"><span class="ctx-lab">Deine Altersgruppe</span>
+    <h3>Two quick clicks before you start</h3>
+    <p><small>Optional — but it helps put your assessment and the right next step into context.</small></p>
+    <div class="ctx-row"><span class="ctx-lab">Your age group</span>
       <div class="ctx-opts">
-        <input type="radio" name="ctx-alter" id="alter-u18" value="unter 18"><label for="alter-u18">unter 18</label>
+        <input type="radio" name="ctx-alter" id="alter-u18" value="unter 18"><label for="alter-u18">under 18</label>
         <input type="radio" name="ctx-alter" id="alter-18" value="18–29"><label for="alter-18">18–29</label>
         <input type="radio" name="ctx-alter" id="alter-30" value="30–49"><label for="alter-30">30–49</label>
         <input type="radio" name="ctx-alter" id="alter-50" value="50–64"><label for="alter-50">50–64</label>
         <input type="radio" name="ctx-alter" id="alter-65" value="65+"><label for="alter-65">65+</label>
       </div></div>
-    <div class="ctx-row"><span class="ctx-lab">Worum geht es dir vor allem?</span>
+    <div class="ctx-row"><span class="ctx-lab">What matters most to you?</span>
       <div class="ctx-opts">
-        <input type="radio" name="ctx-kontext" id="ctx-privat" value="privat"><label for="ctx-privat">Privat &amp; Alltag</label>
-        <input type="radio" name="ctx-kontext" id="ctx-arbeit" value="arbeit"><label for="ctx-arbeit">Arbeit &amp; Beruf</label>
-        <input type="radio" name="ctx-kontext" id="ctx-bildung" value="bildung"><label for="ctx-bildung">Bildung &amp; Lehre (Schule, Uni, Weiterbildung)</label>
-        <input type="radio" name="ctx-kontext" id="ctx-vertraulich" value="vertraulich"><label for="ctx-vertraulich">Vertrauliche Daten (Kanzlei, Praxis, sensible Fälle)</label>
-        <input type="radio" name="ctx-kontext" id="ctx-unterstuetzen" value="unterstuetzen"><label for="ctx-unterstuetzen">Ich unterstütze jemanden (Familie, Eltern, Team)</label>
-        <input type="radio" name="ctx-kontext" id="ctx-neugier" value="neugier"><label for="ctx-neugier">Einfach neugierig</label>
+        <input type="radio" name="ctx-kontext" id="ctx-privat" value="privat"><label for="ctx-privat">Private life &amp; everyday</label>
+        <input type="radio" name="ctx-kontext" id="ctx-arbeit" value="arbeit"><label for="ctx-arbeit">Work &amp; career</label>
+        <input type="radio" name="ctx-kontext" id="ctx-bildung" value="bildung"><label for="ctx-bildung">Education &amp; teaching (school, university, further training)</label>
+        <input type="radio" name="ctx-kontext" id="ctx-vertraulich" value="vertraulich"><label for="ctx-vertraulich">Confidential data (law firm, medical practice, sensitive cases)</label>
+        <input type="radio" name="ctx-kontext" id="ctx-unterstuetzen" value="unterstuetzen"><label for="ctx-unterstuetzen">I support someone (family, parents, team)</label>
+        <input type="radio" name="ctx-kontext" id="ctx-neugier" value="neugier"><label for="ctx-neugier">Just curious</label>
       </div></div>
   </section>
 
-  <section class="dim" data-dim="d1" data-name="Werkzeug & Zugang">
-    <div class="dim-head"><span class="num">1</span><h2>Werkzeug & Zugang</h2>
-      <span class="frage">Frage dahinter: Hast du überhaupt einen Boden, auf dem KI-Nutzung stehen kann?</span></div>
+  <section class="dim" data-dim="d1" data-name="Tools & Access">
+    <div class="dim-head"><span class="num">1</span><h2>Tools & Access</h2>
+      <span class="frage">The question behind it: Do you even have solid ground for AI use to stand on?</span></div>
 
-    <fieldset class="item" data-rev="0"><legend>Ich habe mindestens ein KI-Werkzeug (z. B. ChatGPT, Claude, Gemini) eingerichtet und könnte es jetzt sofort nutzen.</legend><div class="scale" data-q="d1-1"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich nutze KI nicht nur am Rechner, sondern auch auf dem Handy, wenn es unterwegs hilft.</legend><div class="scale" data-q="d1-2"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich habe schon einmal bewusst zwei KI-Werkzeuge verglichen, um das passende für mich zu finden.</legend><div class="scale" data-q="d1-3"></div></fieldset>
-    <fieldset class="item" data-rev="1"><legend>KI probiere ich höchstens aus, wenn jemand sie mir zeigt — von selbst öffne ich keine.<span class="rk">umgepolt</span></legend><div class="scale" data-q="d1-4"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Für Dinge, die mir wichtig sind, habe ich eine bewusst gewählte (ggf. bezahlte) KI-Variante statt „was gerade offen ist“.</legend><div class="scale" data-q="d1-5"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich wüsste, wo ich nachschaue oder wen ich frage, wenn ich ein neues KI-Werkzeug einrichten wollte.</legend><div class="scale" data-q="d1-6"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I have at least one AI tool (e.g. ChatGPT, Claude, Gemini) set up and could use it right now.</legend><div class="scale" data-q="d1-1"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I use AI not just on my computer but also on my phone when it helps on the go.</legend><div class="scale" data-q="d1-2"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I have deliberately compared two AI tools at least once to find the right one for me.</legend><div class="scale" data-q="d1-3"></div></fieldset>
+    <fieldset class="item" data-rev="1"><legend>I only ever try AI when someone shows it to me — I never open one on my own.<span class="rk">reverse-scored</span></legend><div class="scale" data-q="d1-4"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>For things that matter to me, I use a deliberately chosen (possibly paid) AI option instead of “whatever happens to be open”.</legend><div class="scale" data-q="d1-5"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I'd know where to look or who to ask if I wanted to set up a new AI tool.</legend><div class="scale" data-q="d1-6"></div></fieldset>
   </section>
 
   <!-- ===== DIMENSION 2 ===== -->
-  <section class="dim" data-dim="d2" data-name="Alltag & Zeit">
-    <div class="dim-head"><span class="num">2</span><h2>Alltag & Zeit</h2>
-      <span class="frage">Frage dahinter: Gibt KI dir schon Zeit zurück — oder ist sie Spielerei?</span></div>
+  <section class="dim" data-dim="d2" data-name="Everyday Life & Time">
+    <div class="dim-head"><span class="num">2</span><h2>Everyday Life & Time</h2>
+      <span class="frage">The question behind it: Is AI already giving you time back — or is it still just a toy?</span></div>
 
-    <fieldset class="item" data-rev="0"><legend>Es gibt mindestens eine wiederkehrende Aufgabe in meinem Alltag (Texte, Planung, Recherche), die ich regelmäßig mit KI erledige.</legend><div class="scale" data-q="d2-1"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Bevor ich etwas mühsam von Hand mache, frage ich mich inzwischen kurz: Könnte KI das schneller?</legend><div class="scale" data-q="d2-2"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich habe schon einmal Papierkram (Brief, Antrag, Einspruch, Formular) mit KI-Hilfe erledigt.</legend><div class="scale" data-q="d2-3"></div></fieldset>
-    <fieldset class="item" data-rev="1"><legend>Am Ende mache ich Dinge doch lieber selbst — KI-Ergebnisse nachzubessern kostet mich mehr Zeit, als es spart.<span class="rk">umgepolt</span></legend><div class="scale" data-q="d2-4"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Für wiederkehrende Anlässe (E-Mails, Einkauf, Reiseplanung) habe ich feste Abläufe oder gespeicherte Anweisungen.</legend><div class="scale" data-q="d2-5"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Durch KI gewinne ich in einer normalen Woche spürbar Zeit — und ich könnte benennen, wo.</legend><div class="scale" data-q="d2-6"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>There is at least one recurring task in my everyday life (writing, planning, research) that I regularly get done with AI.</legend><div class="scale" data-q="d2-1"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>Before I do something laboriously by hand, I now briefly ask myself: could AI do this faster?</legend><div class="scale" data-q="d2-2"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I have already handled paperwork (a letter, application, appeal, form) with the help of AI.</legend><div class="scale" data-q="d2-3"></div></fieldset>
+    <fieldset class="item" data-rev="1"><legend>In the end I'd rather do things myself — fixing up AI results costs me more time than it saves.<span class="rk">reverse-scored</span></legend><div class="scale" data-q="d2-4"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>For recurring occasions (emails, shopping, travel planning) I have set routines or saved instructions.</legend><div class="scale" data-q="d2-5"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>AI gives me noticeable time back in a normal week — and I could name where.</legend><div class="scale" data-q="d2-6"></div></fieldset>
   </section>
 
   <!-- ===== DIMENSION 3 ===== -->
-  <section class="dim" data-dim="d3" data-name="Lernen & Verstehen">
-    <div class="dim-head"><span class="num">3</span><h2>Lernen & Verstehen</h2>
-      <span class="frage">Frage dahinter: Ist KI für dich ein Lern-Partner — oder nur ein Antwortautomat?</span></div>
+  <section class="dim" data-dim="d3" data-name="Learning & Understanding">
+    <div class="dim-head"><span class="num">3</span><h2>Learning & Understanding</h2>
+      <span class="frage">The question behind it: Is AI a learning partner for you — or just an answer machine?</span></div>
 
-    <fieldset class="item" data-rev="0"><legend>Wenn ich etwas nicht verstehe (Vertrag, Bescheid, Diagnose, Technik), lasse ich es mir von KI in einfacher Sprache erklären.</legend><div class="scale" data-q="d3-1"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich nutze KI, um Neues zu lernen (eine Sprache, eine Fähigkeit, ein Thema) — nicht nur, um Fertiges zu bekommen.</legend><div class="scale" data-q="d3-2"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich stelle Rückfragen, bis ich eine KI-Antwort wirklich verstanden habe, statt sie nur zu übernehmen.</legend><div class="scale" data-q="d3-3"></div></fieldset>
-    <fieldset class="item" data-rev="1"><legend>Ehrlich gesagt weiß ich oft gar nicht, was ich eine KI überhaupt fragen soll.<span class="rk">umgepolt</span></legend><div class="scale" data-q="d3-4"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich habe KI schon genutzt, um eine wichtige Entscheidung vorzubereiten (Vergleich, Pro und Contra, Fragen für den Profi-Termin).</legend><div class="scale" data-q="d3-5"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Menschen in meinem Umfeld haben durch mich schon etwas Nützliches über KI gelernt.</legend><div class="scale" data-q="d3-6"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>When I don't understand something (a contract, official letter, diagnosis, technology), I have AI explain it to me in plain language.</legend><div class="scale" data-q="d3-1"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I use AI to learn new things (a language, a skill, a topic) — not just to get finished results.</legend><div class="scale" data-q="d3-2"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I ask follow-up questions until I have really understood an AI answer, instead of just taking it as given.</legend><div class="scale" data-q="d3-3"></div></fieldset>
+    <fieldset class="item" data-rev="1"><legend>Honestly, I often don't even know what I would ask an AI in the first place.<span class="rk">reverse-scored</span></legend><div class="scale" data-q="d3-4"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I have already used AI to prepare an important decision (a comparison, pros and cons, questions for the expert appointment).</legend><div class="scale" data-q="d3-5"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>People around me have already learned something useful about AI through me.</legend><div class="scale" data-q="d3-6"></div></fieldset>
   </section>
 
   <!-- ===== DIMENSION 4 ===== -->
-  <section class="dim" data-dim="d4" data-name="Urteilskraft & Sicherheit">
-    <div class="dim-head"><span class="num">4</span><h2>Urteilskraft & Sicherheit</h2>
-      <span class="frage">Frage dahinter: Weißt du, was du KI anvertrauen kannst — und was nicht?</span></div>
+  <section class="dim" data-dim="d4" data-name="Judgement & Safety">
+    <div class="dim-head"><span class="num">4</span><h2>Judgement & Safety</h2>
+      <span class="frage">The question behind it: Do you know what you can entrust to AI — and what you can't?</span></div>
 
-    <fieldset class="item" data-rev="0"><legend>Ich weiß, welche Angaben ich einer KI besser nicht anvertraue (z. B. Gesundheitsdaten, Passwörter, Namen anderer).</legend><div class="scale" data-q="d4-1"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Wichtige KI-Antworten prüfe ich gegen, bevor ich danach handle (zweite Quelle, Fachmensch, gesunder Menschenverstand).</legend><div class="scale" data-q="d4-2"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich erkenne typische Anzeichen, wenn ein Bild, Video oder Text KI-generiert sein könnte.</legend><div class="scale" data-q="d4-3"></div></fieldset>
-    <fieldset class="item" data-rev="1"><legend>Was die KI sagt, übernehme ich meistens so, wie es kommt — zum Prüfen fehlt mir Zeit oder Wissen.<span class="rk">umgepolt</span></legend><div class="scale" data-q="d4-4"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich könnte einem Kind oder älteren Angehörigen erklären, worauf man bei KI achten muss.</legend><div class="scale" data-q="d4-5"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich weiß in Grundzügen, was mit meinen Eingaben passiert (Speicherung, Training, Einstellungen).</legend><div class="scale" data-q="d4-6"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I know which details I'd better not entrust to an AI (e.g. health data, passwords, other people's names).</legend><div class="scale" data-q="d4-1"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I double-check important AI answers before acting on them (a second source, an expert, common sense).</legend><div class="scale" data-q="d4-2"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I recognise typical signs that an image, video or text might be AI-generated.</legend><div class="scale" data-q="d4-3"></div></fieldset>
+    <fieldset class="item" data-rev="1"><legend>I usually take what the AI says as it comes — I lack the time or knowledge to check it.<span class="rk">reverse-scored</span></legend><div class="scale" data-q="d4-4"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I could explain to a child or an older relative what to watch out for with AI.</legend><div class="scale" data-q="d4-5"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I know in broad terms what happens to my inputs (storage, training, settings).</legend><div class="scale" data-q="d4-6"></div></fieldset>
   </section>
 
   <!-- ===== DIMENSION 5 ===== -->
-  <section class="dim" data-dim="d5" data-name="Zukunft & Beruf">
-    <div class="dim-head"><span class="num">5</span><h2>Zukunft & Beruf</h2>
-      <span class="frage">Frage dahinter: Bist du vorbereitet — oder begleitet dich nur das Gefühl, etwas zu verpassen?</span></div>
+  <section class="dim" data-dim="d5" data-name="Future & Career">
+    <div class="dim-head"><span class="num">5</span><h2>Future & Career</h2>
+      <span class="frage">The question behind it: Are you prepared — or is the feeling of missing out your only companion?</span></div>
 
-    <fieldset class="item" data-rev="0"><legend>Ich habe eine ungefähre Vorstellung, wie KI meinen Beruf oder mein Umfeld in den nächsten Jahren verändert.</legend><div class="scale" data-q="d5-1"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>In den letzten Monaten habe ich bewusst eine Fähigkeit aufgebaut, die mich im KI-Zeitalter tragfähiger macht.</legend><div class="scale" data-q="d5-2"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Wenn in meinem Umfeld über KI gesprochen wird, kann ich mitreden und einordnen, statt nur zuzuhören.</legend><div class="scale" data-q="d5-3"></div></fieldset>
-    <fieldset class="item" data-rev="1"><legend>Das Gefühl, bei KI etwas Wichtiges zu verpassen, begleitet mich öfter — ohne dass ich weiß, wo ich anfangen soll.<span class="rk">umgepolt</span></legend><div class="scale" data-q="d5-4"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich habe konkret geprüft, welche meiner Aufgaben KI übernehmen könnte — und welche bewusst bei mir bleiben.</legend><div class="scale" data-q="d5-5"></div></fieldset>
-    <fieldset class="item" data-rev="0"><legend>Ich habe einen nächsten Lernschritt benannt (Kurs, Projekt, Experiment) statt „irgendwann mal“.</legend><div class="scale" data-q="d5-6"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I have a rough idea of how AI will change my job or my environment over the next few years.</legend><div class="scale" data-q="d5-1"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>In recent months I have deliberately built a skill that makes me more resilient in the AI era.</legend><div class="scale" data-q="d5-2"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>When people around me talk about AI, I can join the conversation and put things into perspective instead of just listening.</legend><div class="scale" data-q="d5-3"></div></fieldset>
+    <fieldset class="item" data-rev="1"><legend>The feeling of missing out on something important with AI keeps coming back — without me knowing where to start.<span class="rk">reverse-scored</span></legend><div class="scale" data-q="d5-4"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I have looked concretely at which of my tasks AI could take over — and which deliberately stay with me.</legend><div class="scale" data-q="d5-5"></div></fieldset>
+    <fieldset class="item" data-rev="0"><legend>I have named a next learning step (a course, a project, an experiment) instead of “someday”.</legend><div class="scale" data-q="d5-6"></div></fieldset>
   </section>
 
   <div class="no-print" style="text-align:center;margin:32px 0">
-    <button class="btn" id="eval-btn-2" type="button">Auswertung anzeigen ↓</button>
-    <p class="js-only" id="eval-hint" style="margin-top:12px"><small>Noch nicht alle Aussagen beantwortet — fehlende zählen in der Demo als „weiß ich nicht" (1).</small></p>
+    <button class="btn" id="eval-btn-2" type="button">Show my results ↓</button>
+    <p class="js-only" id="eval-hint" style="margin-top:12px"><small>Not all statements answered yet — in the demo, missing ones count as “I don't know” (1).</small></p>
   </div>
 
   </form>
 
   <!-- ===== REPORT ===== -->
   <section id="report">
-    <h2>Deine Auswertung</h2>
+    <h2>Your assessment</h2>
 
     <p class="no-js-note callout">
-      <strong>Ohne JavaScript</strong> wird hier keine berechnete Auswertung angezeigt. Der Fragebogen oben bleibt vollständig lesbar. Aktiviere JavaScript, um deine Gesamt-Einordnung, die Heatmap je Bereich und deine Hebel zu sehen.
+      <strong>Without JavaScript</strong>, no calculated assessment is shown here. The questionnaire above remains fully readable. Enable JavaScript to see your overall picture, the heatmap for each area and your levers.
     </p>
 
     <div class="js-only" id="report-live" hidden>
       <div class="card accent-top">
-        <h3>Gesamt-Einordnung</h3>
+        <h3>Overall picture</h3>
         <div class="gesamt">
           <span class="ampel-dot" id="ges-dot"></span>
           <div class="dial" id="ges-dial" aria-hidden="true">
@@ -530,71 +530,71 @@ img,svg{max-width:100%}
               <circle class="ring-fg" id="ges-ring" cx="66" cy="66" r="56" stroke="var(--gruen)"
                       stroke-dasharray="351.9" stroke-dashoffset="351.9"></circle>
             </svg>
-            <div class="num"><b id="ges-num">–</b><span>von 5</span></div>
+            <div class="num"><b id="ges-num">–</b><span>out of 5</span></div>
           </div>
           <div style="flex:1;min-width:220px"><div style="font-family:var(--font-display);font-size:1.5rem;font-weight:600;letter-spacing:-.4px;color:var(--ink)" id="ges-stufe"></div>
           <div id="ges-text" style="color:var(--body);margin-top:4px"></div></div>
         </div>
-        <p style="margin-top:16px"><small>Das ist eine Standortbestimmung, kein Zeugnis. Der Gesamtwert ist bewusst nachrangig — die Heatmap je Dimension ist die eigentliche Aussage, nicht eine einzelne Zahl.</small></p>
+        <p style="margin-top:16px"><small>This is an orientation, not a report card. The overall score is deliberately secondary — the heatmap by dimension is the real message, not a single number.</small></p>
       </div>
 
       <div class="card">
-        <h3>Heatmap über die fünf Lebensbereiche</h3>
-        <p><small>Schwächste oben — so wird der nächste Hebel sofort sichtbar.</small></p>
+        <h3>Heatmap across the five areas of life</h3>
+        <p><small>Weakest first — so your next lever becomes visible right away.</small></p>
         <div class="heat" id="heat"></div>
       </div>
 
       <div class="card">
-        <h3>Was schon trägt</h3>
+        <h3>What's already carrying you</h3>
         <div id="staerken"></div>
       </div>
 
       <div class="card">
-        <h3>Deine Hebel — die größten ungenutzten Potenziale im Klartext</h3>
+        <h3>Your levers — the biggest untapped potential, in plain terms</h3>
         <div id="hebel"></div>
       </div>
 
       <div class="card">
-        <h3>Roadmap-Teaser</h3>
-        <p><small>Bewusst ein Teaser, kein Fahrplan — drei grobe Etappen aus deinem Profil. Tempo und Tiefe bestimmst du.</small></p>
+        <h3>Roadmap teaser</h3>
+        <p><small>Deliberately a teaser, not a full plan — three rough stages drawn from your profile. You set the pace and the depth.</small></p>
         <ol class="roadmap" id="roadmap"></ol>
       </div>
 
       <div class="card" id="empfehlung-card">
-        <h3>Dein möglicher nächster Schritt</h3>
-        <p><small>Wenn du magst: So könnte der bequemste Weg aussehen, deine schwächsten Bereiche nicht allein anzugehen — unverbindlich, du entscheidest.</small></p>
+        <h3>Your possible next step</h3>
+        <p><small>If you like: here's what the easiest way could look like to tackle your weakest areas without going it alone — no strings attached, you decide.</small></p>
         <div id="empfehlung"></div>
-        <p style="margin-top:16px;font-size:.95rem"><a href="https://tomo.aivantum.com/" target="_blank" rel="noopener">Was ein eigener Tomo ist und wie er eingerichtet wird — tomo.aivantum.com →</a></p>
+        <p style="margin-top:16px;font-size:.95rem"><a href="https://tomo.aivantum.com/" target="_blank" rel="noopener">What your own Tomo is and how it's set up — tomo.aivantum.com →</a></p>
       </div>
 
       <div class="card" id="vertiefen">
-        <h3>Tiefer gehen — so sähe es mit einem eigenen KI-Begleiter aus</h3>
-        <p><small>Fahre über einen Bereich (oder tippe ihn an) — du siehst beispielhaft, wie ein eigener KI-Begleiter genau diesen Bereich für dich trägt. <strong>Nur Platzhalter-Daten zur Veranschaulichung.</strong></small></p>
+        <h3>Going deeper — what it would look like with your own AI companion</h3>
+        <p><small>Hover over an area (or tap it) — you'll see an example of how a personal AI companion would carry exactly this area for you. <strong>Placeholder data for illustration only.</strong></small></p>
         <div class="vt-dims" id="vt-dims"></div>
         <div class="vt-preview" id="vt-preview"></div>
-        <p class="vt-note">Dein eigener Tomo wird gemeinsam mit dir eingerichtet — auf deinem Gerät, mit deinen Regeln. Der Check hier bleibt kostenlos; was danach kommt, entscheidest du auf <strong>tomo.aivantum.com</strong>.</p>
-        <p style="text-align:center;margin-top:16px"><button type="button" class="btn" id="vt-cta">Diesen Bereich mit Tomo angehen →</button></p>
+        <p class="vt-note">Your own Tomo is set up together with you — on your device, with your rules. This check stays free; what comes after is your decision, at <strong>tomo.aivantum.com</strong>.</p>
+        <p style="text-align:center;margin-top:16px"><button type="button" class="btn" id="vt-cta">Tackle this area with Tomo →</button></p>
       </div>
     </div>
 
-    <!-- Mensch-/Grenze-Anker + CTA: statisch, immer sichtbar -->
+    <!-- Human/limits anchor + CTA: static, always visible -->
     <div class="card">
-      <h3>Was dieser Selbsttest bewusst nicht kann</h3>
-      <p>Diese Grenzen sind keine Schwäche, die man wegoptimiert — sie machen den Test ehrlich:</p>
+      <h3>What this self-check deliberately can't do</h3>
+      <p>These limits aren't a weakness to be optimised away — they're what keeps the test honest:</p>
       <ul>
-        <li><strong>Selbst-Einschätzung ist nicht Außen-Sicht.</strong> Der Test misst, wie du dich siehst — und schon das ist wertvoll, weil es sortiert.</li>
-        <li><strong>Er sagt <em>was</em>, nicht <em>wie</em>.</strong> Den ersten Schritt je Bereich bekommst du mit. Wie er in deinen Alltag passt, weißt nur du — oder ihr findet es gemeinsam mit einem Begleiter heraus.</li>
-        <li><strong>Kein Urteil über dich.</strong> Der Check ist Reflexions-Anker, nie Bewertung. Eine niedrige Zahl heißt nur: Da liegt noch etwas für dich bereit.</li>
+        <li><strong>Self-assessment is not an outside view.</strong> The test measures how you see yourself — and even that is valuable, because it sorts things out.</li>
+        <li><strong>It tells you <em>what</em>, not <em>how</em>.</strong> You get the first step for each area. How it fits into your everyday life, only you know — or you work it out together with a companion.</li>
+        <li><strong>No judgement about you.</strong> The check is an anchor for reflection, never a verdict. A low number only means: something is still waiting there for you.</li>
       </ul>
     </div>
 
     <div class="card inv" id="cta">
-      <h3>Der nächste Schritt — wenn du magst</h3>
-      <p>Dieser Check zeigt dein Profil. Wenn du die Potenziale nicht allein heben willst: <strong>Dein eigener Tomo</strong> ist ein KI-Begleiter, der dir gehört — eingerichtet für deinen Alltag, mit deinem Gedächtnis, auf deinem Gerät. Kein Abo-Dschungel, kein Tab-Chaos.</p>
-      <p style="margin-top:12px;color:#c9d3ce;font-size:.92rem">Fair und ohne Überraschung: Der Check ist <strong style="color:#fff">kostenlos</strong> und verpflichtet zu nichts. Was ein eigener Tomo ist, siehst du in Ruhe auf der Produktseite.</p>
+      <h3>The next step — if you like</h3>
+      <p>This check shows your profile. If you don't want to lift the potential on your own: <strong>Your own Tomo</strong> is an AI companion that belongs to you — set up for your everyday life, with your memory, on your device. No subscription jungle, no tab chaos.</p>
+      <p style="margin-top:12px;color:#c9d3ce;font-size:.92rem">Fair and with no surprises: the check is <strong style="color:#fff">free</strong> and commits you to nothing. You can explore what your own Tomo is at your own pace on the product page.</p>
       <p style="margin-top:18px">
-        <a class="btn ghost" href="https://tomo.aivantum.com/" target="_blank" rel="noopener">Dein eigener Tomo — ansehen</a>
-        <a class="btn ghost" href="mailto:jay@aivantum.com?subject=Frage%20zum%20KI-ready-Check" style="margin-left:10px">Frage stellen</a>
+        <a class="btn ghost" href="https://tomo.aivantum.com/" target="_blank" rel="noopener">Your own Tomo — take a look</a>
+        <a class="btn ghost" href="mailto:jay@aivantum.com?subject=Question%20about%20the%20AI-ready%20check" style="margin-left:10px">Ask a question</a>
       </p>
     </div>
   </section>
@@ -603,28 +603,28 @@ img,svg{max-width:100%}
 
 <footer>
   <div class="wrap">
-  <p><strong style="color:var(--body-strong)">KI ready? · Der Selbst-Check für dein Leben · by Vantum</strong> — eine Standortbestimmung über fünf Lebensbereiche, kein Zeugnis. Ampel-Schwellen: &lt; 2.5 Frühphase · 2.5–3.5 in Bewegung · ≥ 3.5 ready. Die Auswertung wird in deinem Browser berechnet; deine E-Mail und dein Ergebnis-Profil werden nur nach deiner Einwilligung übermittelt — um dir die Auswertung zu senden und, falls von dir gewünscht, Kontakt aufzunehmen. Details im <a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a>.</p>
+  <p><strong style="color:var(--body-strong)">AI ready? · The self-check for your life · by Vantum</strong> — an orientation across five areas of life, not a report card. Traffic-light thresholds: &lt; 2.5 early stage · 2.5–3.5 in motion · ≥ 3.5 ready. Your assessment is calculated in your browser; your email address and your results profile are only transmitted with your consent — to send you your assessment and, if you wish, to get in touch. Details in the <a href="/datenschutz.html">privacy policy</a> · <a href="/impressum.html">legal notice</a>.</p>
   </div>
 </footer>
 
-<!-- ===== Email-Gate ===== -->
+<!-- ===== Email gate ===== -->
 <div class="gate-overlay" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
   <form class="gate" id="gate-form" novalidate>
-    <h3 id="gate-title">deine Auswertung ist fertig.</h3>
-    <p class="sub">Gib deine E-Mail-Adresse ein — du siehst dein Ergebnis sofort hier auf der Seite und bekommst es zusätzlich per Mail, damit du es in Ruhe nachlesen kannst.</p>
+    <h3 id="gate-title">Your assessment is ready.</h3>
+    <p class="sub">Enter your email address — you'll see your results right here on the page and also receive them by email, so you can revisit them at your own pace.</p>
     <p class="err" id="gate-err"></p>
-    <label class="fld" for="gate-email">E-Mail-Adresse</label>
-    <input type="email" id="gate-email" name="email" required autocomplete="email" placeholder="name@firma.de">
-    <!-- Newsletter-Opt-in AUSGEBLENDET bis Double-Opt-in technisch steht (Single-Opt-in wäre abmahnträchtig, UWG §7).
-         Zum Reaktivieren: hidden-Attribut entfernen — JS (gate-news) und Worker-Feld bleiben funktionsfähig. -->
-    <label class="check" hidden><input type="checkbox" id="gate-news" name="newsletter"><span>Schickt mir den Vantum-Newsletter mit KI-Impulsen für Teams (jederzeit abbestellbar).</span></label>
-    <label class="check"><input type="checkbox" id="gate-tier3" name="tier3"><span>Ich interessiere mich für das begleitete Enablement-Programm (Tier&nbsp;3) — bitte melden Sie sich dazu bei mir.</span></label>
-    <label class="check"><input type="checkbox" id="gate-consent" name="consent" required><span>Ich bin einverstanden, dass meine Angaben zur Erstellung der Auswertung und zur Kontaktaufnahme verarbeitet werden (<a href="datenschutz.html" target="_blank" rel="noopener">Datenschutz</a>).</span></label>
+    <label class="fld" for="gate-email">Email address</label>
+    <input type="email" id="gate-email" name="email" required autocomplete="email" placeholder="name@example.com">
+    <!-- Newsletter opt-in HIDDEN until double opt-in is technically in place (single opt-in would be legally risky, UWG §7).
+         To reactivate: remove the hidden attribute — JS (gate-news) and the worker field remain functional. -->
+    <label class="check" hidden><input type="checkbox" id="gate-news" name="newsletter"><span>Send me the Vantum newsletter with AI impulses for teams (unsubscribe anytime).</span></label>
+    <label class="check"><input type="checkbox" id="gate-tier3" name="tier3"><span>I'm interested in the guided enablement programme (Tier&nbsp;3) — please get in touch with me about it.</span></label>
+    <label class="check"><input type="checkbox" id="gate-consent" name="consent" required><span>I agree that my details will be processed to create the assessment and to get in touch (<a href="/datenschutz.html" target="_blank" rel="noopener">privacy policy</a>).</span></label>
     <div class="actions">
-      <button type="button" class="btn ghost" id="gate-cancel">Zurück</button>
-      <button type="submit" class="btn" id="gate-submit">Auswertung zeigen</button>
+      <button type="button" class="btn ghost" id="gate-cancel">Back</button>
+      <button type="submit" class="btn" id="gate-submit">Show my assessment</button>
     </div>
-    <p class="fine">deine Antworten werden zur Erstellung deiner Auswertung verarbeitet und nicht an Dritte weitergegeben.</p>
+    <p class="fine">Your answers are processed to create your assessment and are not shared with third parties.</p>
   </form>
 </div>
 
@@ -632,20 +632,20 @@ img,svg{max-width:100%}
 (function(){
   "use strict";
   document.documentElement.className = "js";
-  // JS-only Elemente sichtbar machen, no-js-note ausblenden
+  // Make JS-only elements visible, hide the no-js note
   var st = document.createElement("style");
   st.textContent = ".js .js-only{display:block} .js .no-js-note{display:none}";
   document.head.appendChild(st);
 
   var SCALE = [
-    {v:1, lab:"trifft überhaupt<br>nicht zu"},
-    {v:2, lab:"trifft eher<br>nicht zu"},
-    {v:3, lab:"teils,<br>teils"},
-    {v:4, lab:"trifft<br>eher zu"},
-    {v:5, lab:"trifft<br>voll zu"}
+    {v:1, lab:"doesn't apply<br>at all"},
+    {v:2, lab:"mostly doesn't<br>apply"},
+    {v:3, lab:"partly<br>applies"},
+    {v:4, lab:"mostly<br>applies"},
+    {v:5, lab:"fully<br>applies"}
   ];
 
-  // Skalen-Radios in jeden .scale-Container rendern
+  // Render the scale radios into every .scale container
   var scales = document.querySelectorAll(".scale");
   scales.forEach(function(sc){
     var q = sc.getAttribute("data-q");
@@ -672,46 +672,46 @@ img,svg{max-width:100%}
   }
   function updateProgress(){
     var n = answeredCount();
-    document.getElementById("progress-text").textContent = n + " / " + TOTAL + " beantwortet";
+    document.getElementById("progress-text").textContent = n + " / " + TOTAL + " answered";
     document.getElementById("progress-fill").style.width = (100*n/TOTAL) + "%";
     document.getElementById("eval-btn").disabled = (n === 0);
     var hint = document.getElementById("eval-hint");
     if (hint) hint.style.display = (n < TOTAL && n > 0) ? "block" : "none";
   }
 
-  // ---- Auswertungs-Logik ----
+  // ---- Assessment logic ----
   var META = {
-    d1:{name:"Werkzeug & Zugang",
-        luecke:"Es fehlt der einfache Boden — ein eingerichtetes Werkzeug, das du ohne Hürde öffnest und dem du vertraust.",
-        schritt:"Ein KI-Werkzeug bewusst wählen, auch auf dem Handy einrichten und eine Woche lang täglich einmal öffnen."},
-    d2:{name:"Alltag & Zeit",
-        luecke:"KI gibt dir noch keine Zeit zurück — sie ist bisher Spielerei, nicht Entlastung.",
-        schritt:"Eine einzige wiederkehrende Aufgabe wählen und sie zwei Wochen lang konsequent mit KI erledigen."},
-    d3:{name:"Lernen & Verstehen",
-        luecke:"KI ist für dich noch Antwortautomat, kein Lern-Partner — dabei liegt genau dort der größte private Gewinn.",
-        schritt:"Beim nächsten Nicht-Verstehen (Brief, Vertrag, Thema) zuerst die KI um eine einfache Erklärung bitten — und rückfragen, bis es sitzt."},
-    d4:{name:"Urteilskraft & Sicherheit",
-        luecke:"Es fehlt der sichere Umgang — was darf hinein, was stimmt, was ist echt?",
-        schritt:"Drei persönliche Regeln festlegen: was du nie eingibst, was du immer gegenprüfst, woran du KI-Inhalte erkennst."},
-    d5:{name:"Zukunft & Beruf",
-        luecke:"Die Verpasse-ich-was-Sorge ist da, aber noch ohne Plan — sie kostet Energie, statt dich zu bewegen.",
-        schritt:"Einen konkreten Lernschritt benennen und terminieren — und bewusst entscheiden, welche Aufgaben bei dir bleiben."}
+    d1:{name:"Tools & Access",
+        luecke:"The simple foundation is missing — a tool that's set up, that you open without a hurdle and that you trust.",
+        schritt:"Deliberately choose one AI tool, set it up on your phone too, and open it once a day for a week."},
+    d2:{name:"Everyday Life & Time",
+        luecke:"AI isn't giving you time back yet — so far it's a toy, not relief.",
+        schritt:"Pick one single recurring task and do it consistently with AI for two weeks."},
+    d3:{name:"Learning & Understanding",
+        luecke:"AI is still an answer machine for you, not a learning partner — yet that's exactly where the biggest personal gain lies.",
+        schritt:"Next time you don't understand something (a letter, a contract, a topic), ask the AI for a plain-language explanation first — and keep asking until it sticks."},
+    d4:{name:"Judgement & Safety",
+        luecke:"Safe handling is missing — what may go in, what's accurate, what's real?",
+        schritt:"Set three personal rules: what you never enter, what you always double-check, how you recognise AI-generated content."},
+    d5:{name:"Future & Career",
+        luecke:"The am-I-missing-out worry is there, but still without a plan — it drains energy instead of moving you.",
+        schritt:"Name and schedule one concrete learning step — and consciously decide which tasks stay with you."}
   };
 
   function stufeFor(score){
-    // Zwei koordinierte Lesarten (Validierungs-Pass 2026-06-26):
-    //  Ampel = Diagnostics-HQ-Hausstandard RAG, fix & deckungsgleich mit D: rot <2.5 · gelb 2.5–3.5 · gruen ≥3.5
-    //  Stufe = AIVC-4-Stufen, narrativ (nie eingefärbt): Foundational <2.0 · Critical <3.0 · Close <4.0 · Etabliert ≥4.0
+    // Two coordinated readings (validation pass 2026-06-26):
+    //  Ampel = Diagnostics-HQ house-standard RAG, fixed & congruent with D: rot <2.5 · gelb 2.5–3.5 · gruen ≥3.5
+    //  Stufe = AIVC 4 levels, narrative (never colour-coded): Foundational <2.0 · Critical <3.0 · Close <4.0 · Established ≥4.0
     var ampel = score < 2.5 ? "rot" : (score < 3.5 ? "gelb" : "gruen");
     var label, kurz;
-    if (score < 2.0)      { label = "Foundational gaps"; kurz = "Fundament fehlt"; }
-    else if (score < 3.0) { label = "Critical gaps";     kurz = "substanzielle Lücken"; }
-    else if (score < 4.0) { label = "Close tweaks";      kurz = "knapp unter Reife"; }
-    else                  { label = "Etablierte Reife";  kurz = "etabliert"; }
+    if (score < 2.0)      { label = "Foundational gaps"; kurz = "foundation missing"; }
+    else if (score < 3.0) { label = "Critical gaps";     kurz = "substantial gaps"; }
+    else if (score < 4.0) { label = "Close tweaks";      kurz = "close to ready"; }
+    else                  { label = "Established readiness"; kurz = "well established"; }
     return {ampel:ampel, label:label, kurz:kurz};
   }
 
-  // Readiness-Farbe fuer den Dial (calm, non-alarming)
+  // Readiness colour for the dial (calm, non-alarming)
   function ampelColor(a){ return a === "rot" ? "var(--rot)" : a === "gelb" ? "var(--gelb)" : "var(--gruen)"; }
 
   function renderDial(overall, ost){
@@ -723,9 +723,9 @@ img,svg{max-width:100%}
     ring.setAttribute("stroke", ampelColor(ost.ampel));
     ring.style.strokeDasharray = C.toFixed(1);
     num.textContent = overall.toFixed(1);
-    // Auf "leer" zuruecksetzen und per erzwungenem Reflow die Fuell-Animation ausloesen.
-    // (Kein requestAnimationFrame: das wird in Hintergrund-Tabs gedrosselt und der Ring
-    //  bliebe leer — der Reflow-Weg animiert zuverlaessig auf jeder Domain.)
+    // Reset to "empty" and trigger the fill animation via a forced reflow.
+    // (No requestAnimationFrame: it gets throttled in background tabs and the ring
+    //  would stay empty — the reflow route animates reliably on every domain.)
     ring.style.strokeDashoffset = C.toFixed(1);
     void ring.getBoundingClientRect();
     ring.style.strokeDashoffset = (C * (1 - frac)).toFixed(1);
@@ -734,10 +734,10 @@ img,svg{max-width:100%}
   function ctxVal(name){ var c = document.querySelector('input[name="' + name + '"]:checked'); return c ? c.value : null; }
   function ctxLine(){
     var k = ctxVal("ctx-kontext");
-    if (k === "arbeit") return " Fürs Berufliche gibt es Tomo in drei Tiefen — vom gemeinsamen Aufsetzen bis zum Enablement deines Teams. <a href=\"https://tomo.aivantum.com/pricing.html\" target=\"_blank\" rel=\"noopener\">Die drei Tiefen ansehen →</a>";
-    if (k === "bildung") return " Für Schule, Uni und Weiterbildung gibt es Tomo eigens für die Bildung — didaktisch gedacht, nicht als Werkzeug-Dump. <a href=\"https://tomo.aivantum.com/education.html\" target=\"_blank\" rel=\"noopener\">Tomo für die Bildung ansehen →</a>";
-    if (k === "vertraulich") return " Bei vertraulichen Daten (Kanzlei, Praxis, sensible Fälle) läuft Tomo bewusst vertraulich — auf deinem Gerät, ohne dass Inhalte das Haus verlassen. <a href=\"https://tomo.aivantum.com/vertraulichkeit.html\" target=\"_blank\" rel=\"noopener\">Tomo vertraulich ansehen →</a>";
-    if (k === "unterstuetzen") return " Auch für den Menschen, den du unterstützt: Tomo lässt sich gemeinsam einrichten — du bleibst die vertraute Brücke. <a href=\"https://tomo.aivantum.com/familie.html\" target=\"_blank\" rel=\"noopener\">Tomo für die Familie ansehen →</a>";
+    if (k === "arbeit") return " For work, Tomo comes in three depths — from setting it up together to enabling your whole team. <a href=\"https://tomo.aivantum.com/pricing.html\" target=\"_blank\" rel=\"noopener\">See the three depths →</a>";
+    if (k === "bildung") return " For school, university and further training there's a Tomo made for education — designed with teaching in mind, not as a tool dump. <a href=\"https://tomo.aivantum.com/education.html\" target=\"_blank\" rel=\"noopener\">See Tomo for education →</a>";
+    if (k === "vertraulich") return " For confidential data (law firm, medical practice, sensitive cases), Tomo deliberately runs confidentially — on your device, without content leaving the house. <a href=\"https://tomo.aivantum.com/vertraulichkeit.html\" target=\"_blank\" rel=\"noopener\">See Tomo confidential →</a>";
+    if (k === "unterstuetzen") return " And for the person you support: Tomo can be set up together — you remain the trusted bridge. <a href=\"https://tomo.aivantum.com/familie.html\" target=\"_blank\" rel=\"noopener\">See Tomo for the family →</a>";
     return "";
   }
   function evaluate(){
@@ -750,7 +750,7 @@ img,svg{max-width:100%}
       items.forEach(function(fs){
         var rev = fs.getAttribute("data-rev") === "1";
         var checked = fs.querySelector("input:checked");
-        var raw = checked ? parseInt(checked.value,10) : 1; // unbeantwortet = 1 (weiß ich nicht)
+        var raw = checked ? parseInt(checked.value,10) : 1; // unanswered = 1 (I don't know)
         var eff = rev ? (6 - raw) : raw;
         sum += eff; cnt++; spread.push(eff);
       });
@@ -763,18 +763,18 @@ img,svg{max-width:100%}
     var overall = results.reduce(function(a,r){return a+r.score;},0)/results.length;
     var ost = stufeFor(overall);
 
-    // Gesamt
+    // Overall
     var dot = document.getElementById("ges-dot");
     dot.className = "ampel-dot " + ost.ampel;
     renderDial(overall, ost);
-    document.getElementById("ges-stufe").textContent = ost.label + " — Gesamt " + overall.toFixed(1) + " / 5";
+    document.getElementById("ges-stufe").textContent = ost.label + " — Overall " + overall.toFixed(1) + " / 5";
     document.getElementById("ges-text").textContent =
-      "Über alle fünf Dimensionen ergibt sich der Reifegrad „" + ost.label + "“ (" + ost.kurz + "). Entscheidend ist aber, welche Dimension den nächsten Schritt blockiert — siehe Heatmap.";
+      "Across all five dimensions, your readiness level is “" + ost.label + "” (" + ost.kurz + "). What matters most, though, is which dimension is blocking your next step — see the heatmap.";
 
-    // Heatmap: schwächste oben
+    // Heatmap: weakest first
     var sorted = results.slice().sort(function(a,b){
       if (a.score !== b.score) return a.score - b.score;
-      return b.spread - a.spread; // Gleichstand: größere Streuung zuerst
+      return b.spread - a.spread; // tie: larger spread first
     });
     var heat = document.getElementById("heat"); heat.innerHTML = "";
     sorted.forEach(function(r){
@@ -786,12 +786,12 @@ img,svg{max-width:100%}
       heat.appendChild(row);
     });
 
-    // Stärken (grün/gelb)
+    // Strengths (green/amber)
     var staerken = document.getElementById("staerken");
     var stark = results.filter(function(r){return r.st.ampel !== "rot";})
                        .sort(function(a,b){return b.score-a.score;});
     if (stark.length){
-      staerken.innerHTML = "<p>Diese Dimensionen tragen schon — hier steht ein Fundament, auf dem die nächsten Schritte aufsetzen:</p>";
+      staerken.innerHTML = "<p>These dimensions are already carrying you — here's a foundation your next steps can build on:</p>";
       var ul = document.createElement("ul");
       stark.forEach(function(r){
         var li = document.createElement("li");
@@ -800,10 +800,10 @@ img,svg{max-width:100%}
       });
       staerken.appendChild(ul);
     } else {
-      staerken.innerHTML = "<p>Aktuell trägt noch keine Dimension klar. Das ist kein Urteil — es heißt, dass der erste, gesicherte Schritt umso mehr zählt. Genau dabei hilft das begleitete Gespräch.</p>";
+      staerken.innerHTML = "<p>Right now, no dimension is clearly carrying you yet. That's not a verdict — it means the first, well-grounded step counts all the more. That's exactly what the guided conversation helps with.</p>";
     }
 
-    // Hebel: 2–3 schwächste
+    // Levers: 2–3 weakest
     var hebelN = sorted.filter(function(r){return r.st.ampel==="rot";}).length;
     var hebelCount = Math.min(3, Math.max(2, hebelN || 2));
     hebelCount = Math.min(hebelCount, sorted.length);
@@ -812,24 +812,24 @@ img,svg{max-width:100%}
       var d = document.createElement("div"); d.className = "hebel-card";
       d.innerHTML = "<h4>" + r.name + " — " + r.st.label + " (" + r.score.toFixed(1) + ")</h4>" +
         "<p>" + META[r.id].luecke + "</p>" +
-        "<p><strong>Nächster sinnvoller Schritt:</strong> " + META[r.id].schritt + "</p>";
+        "<p><strong>Next sensible step:</strong> " + META[r.id].schritt + "</p>";
       hebel.appendChild(d);
     });
 
-    // Roadmap-Teaser aus den schwächsten Dimensionen
+    // Roadmap teaser from the weakest dimensions
     var rm = document.getElementById("roadmap"); rm.innerHTML = "";
     var first = sorted[0], second = sorted[1];
     var steps = [
-      "<strong>Zuerst:</strong> " + META[first.id].schritt + " (Dimension „" + first.name + "“ ist heute der härteste Engpass).",
-      "<strong>Als Enabler vorher klären:</strong> " + META[second.id].schritt + " — ohne diese Grundlage trägt der erste Schritt nicht dauerhaft.",
-      "<strong>Fortschritt erkennbar machen:</strong> einen einfachen, wiederholbaren Indikator je Bereich festlegen, an dem du in 4–6 Wochen siehst, ob sich etwas bewegt — bevor in die Breite skaliert wird."
+      "<strong>First:</strong> " + META[first.id].schritt + " (the dimension “" + first.name + "” is your hardest bottleneck today).",
+      "<strong>Clear this enabler alongside it:</strong> " + META[second.id].schritt + " — without this foundation, the first step won't hold for long.",
+      "<strong>Make progress visible:</strong> set one simple, repeatable indicator per area so you can see in 4–6 weeks whether things are moving — before scaling up."
     ];
     steps.forEach(function(s){ var li = document.createElement("li"); li.innerHTML = s; rm.appendChild(li); });
 
-    // Empfohlene Vertiefung: schwächste Dimensionen -> AIVC-Spectrum-Instrumente (Mapping Jay 02.07.)
+    // Recommended deep-dive: weakest dimensions -> AIVC spectrum instruments (mapping Jay 02.07.)
     var AIVC = {
-      tomo: { code:"TOMO", name:"Dein eigener Tomo — ein KI-Begleiter, der dir gehört",
-              desc:"Ein persönlicher KI-Begleiter, eingerichtet für deinen Alltag: mit deinem Gedächtnis, deinen Abläufen, deinen Regeln — statt hundert offener Tabs.",
+      tomo: { code:"TOMO", name:"Your own Tomo — an AI companion that belongs to you",
+              desc:"A personal AI companion, set up for your everyday life: with your memory, your routines, your rules — instead of a hundred open tabs.",
               url:"https://tomo.aivantum.com/" }
     };
     var DIM2AIVC = { d1:["tomo"], d2:["tomo"], d3:["tomo"], d4:["tomo"], d5:["tomo"] };
@@ -845,8 +845,8 @@ img,svg{max-width:100%}
       picks.forEach(function(p){
         var d = document.createElement("div"); d.className = "hebel-card";
         d.innerHTML = "<h4>" + p.inst.code + " · " + p.inst.name + "</h4>" +
-          "<p>" + p.inst.desc + ctxLine() + " <span style=\"color:var(--muted)\">(hilft dir besonders bei „" + p.wegen + "“)</span></p>" +
-          "<p><a href=\"" + p.inst.url + "\" target=\"_blank\" rel=\"noopener\"><strong>tomo.aivantum.com ansehen →</strong></a></p>";
+          "<p>" + p.inst.desc + ctxLine() + " <span style=\"color:var(--muted)\">(especially helpful for “" + p.wegen + "”)</span></p>" +
+          "<p><a href=\"" + p.inst.url + "\" target=\"_blank\" rel=\"noopener\"><strong>See tomo.aivantum.com →</strong></a></p>";
         empf.appendChild(d);
       });
     }
@@ -856,12 +856,12 @@ img,svg{max-width:100%}
     document.getElementById("report").scrollIntoView({behavior:"smooth"});
   }
 
-  // ---- Vertiefen-Vorschau (Hover-Teaser, neutral, Dummy-Daten) ----
+  // ---- Going-deeper preview (hover teaser, neutral, dummy data) ----
   function renderVertiefen(sorted){
     var vtDims = document.getElementById("vt-dims");
     var vtPrev = document.getElementById("vt-preview");
     if (!vtDims || !vtPrev) return;
-    var SUBS = ["Ist-Stand je Facette", "Alltag vs. Anspruch", "Engpass-Tiefe", "Nächster Hebel"];
+    var SUBS = ["Current state per facet", "Everyday reality vs. aspiration", "Bottleneck depth", "Next lever"];
     function renderPreview(r){
       Array.prototype.forEach.call(vtDims.children, function(b){
         b.classList.toggle("active", b.getAttribute("data-dim") === r.id);
@@ -876,9 +876,9 @@ img,svg{max-width:100%}
                '<span class="val">' + v + '</span></div>';
       }).join("");
       vtPrev.innerHTML =
-        '<span class="vt-sticker">Beispiel · Dummy-Daten</span>' +
-        '<h4>Vertiefte Auswertung · ' + r.name + '</h4>' + bars +
-        '<div class="vt-rec"><strong>Beispielhafter Hebel:</strong> Ein eigener Tomo nimmt dir genau in diesem Bereich die wiederkehrende Arbeit ab — eingerichtet auf deinem Gerät, in deiner Sprache, mit deinen Regeln. Wie das aussieht: tomo.aivantum.com</div>';
+        '<span class="vt-sticker">Example · Dummy data</span>' +
+        '<h4>In-depth view · ' + r.name + '</h4>' + bars +
+        '<div class="vt-rec"><strong>Example lever:</strong> Your own Tomo takes the recurring work off your hands in exactly this area — set up on your device, in your language, with your rules. See what that looks like: tomo.aivantum.com</div>';
     }
     vtDims.innerHTML = "";
     sorted.forEach(function(r){
@@ -890,11 +890,11 @@ img,svg{max-width:100%}
       b.addEventListener("click", function(){ renderPreview(r); });
       vtDims.appendChild(b);
     });
-    renderPreview(sorted[0]); // Default = schwächste Dimension
+    renderPreview(sorted[0]); // default = weakest dimension
   }
 
-  // ---- Email-Gate + Versand ----
-  // Cloudflare-Worker-URL. Leer = Staging (Ergebnis wird gezeigt, aber nichts gesendet).
+  // ---- Email gate + submission ----
+  // Cloudflare worker URL. Empty = staging (result is shown, nothing is sent).
   var SUBMIT_ENDPOINT = "https://aivantum-check.aivantum.workers.dev/submit-check";
   var VARIANT = "ready";
 
@@ -915,7 +915,7 @@ img,svg{max-width:100%}
   function closeGate(){ gate.classList.remove("open"); }
 
   function collectPayload(email){
-    /* READY-Variante: Worker unterscheidet Mail-Vorlage am variant-Feld */
+    /* READY variant: the worker tells mail templates apart via the variant field */
     var scores = {}, answers = {};
     document.querySelectorAll("section.dim").forEach(function(sec){
       var id = sec.getAttribute("data-dim");
@@ -934,6 +934,7 @@ img,svg{max-width:100%}
     return {
       email: email,
       variant: VARIANT,
+      lang: "en",
       alter: ctxVal("ctx-alter"),
       kontext: ctxVal("ctx-kontext"),
       newsletter: document.getElementById("gate-news").checked,
@@ -948,25 +949,25 @@ img,svg{max-width:100%}
     e.preventDefault();
     gateErr.classList.remove("show");
     var email = document.getElementById("gate-email").value.trim();
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ showErr("Bitte eine gültige E-Mail-Adresse eingeben."); return; }
-    if (!document.getElementById("gate-consent").checked){ showErr("Bitte die Einwilligung bestätigen, um die Auswertung zu sehen."); return; }
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ showErr("Please enter a valid email address."); return; }
+    if (!document.getElementById("gate-consent").checked){ showErr("Please confirm your consent to see your assessment."); return; }
 
     var btn = document.getElementById("gate-submit");
-    btn.disabled = true; btn.textContent = "Wird gesendet …";
+    btn.disabled = true; btn.textContent = "Sending …";
     var payload = collectPayload(email);
     function reveal(){
       unlocked = true; closeGate();
       reportLive.hidden = false; evaluate();
-      btn.disabled = false; btn.textContent = "Auswertung zeigen";
+      btn.disabled = false; btn.textContent = "Show my assessment";
     }
-    if (!SUBMIT_ENDPOINT){ // Staging: kein Backend verdrahtet
-      if (window.console) console.log("[check] Staging-Modus (kein Versand). Payload:", payload);
+    if (!SUBMIT_ENDPOINT){ // staging: no backend wired up
+      if (window.console) console.log("[check] Staging mode (nothing sent). Payload:", payload);
       reveal(); return;
     }
     fetch(SUBMIT_ENDPOINT, { method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(payload) })
       .then(function(r){ if(!r.ok) throw new Error("status " + r.status); return r.json().catch(function(){ return {}; }); })
       .then(function(){ reveal(); })
-      .catch(function(err){ if(window.console) console.warn("[check] Versand fehlgeschlagen:", err); reveal(); });
+      .catch(function(err){ if(window.console) console.warn("[check] Submission failed:", err); reveal(); });
   });
 
   document.getElementById("gate-cancel").addEventListener("click", closeGate);
