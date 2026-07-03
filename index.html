@@ -717,8 +717,8 @@ img,svg{max-width:100%}
   function ctxVal(name){ var c = document.querySelector('input[name="' + name + '"]:checked'); return c ? c.value : null; }
   function ctxLine(){
     var k = ctxVal("ctx-kontext");
-    if (k === "arbeit") return " Fürs Berufliche gibt es Tomo in drei Tiefen — vom gemeinsamen Aufsetzen bis zum Enablement deines Teams.";
-    if (k === "unterstuetzen") return " Auch für den Menschen, den du unterstützt: Tomo lässt sich gemeinsam einrichten — du bleibst die vertraute Brücke.";
+    if (k === "arbeit") return " Fürs Berufliche gibt es Tomo in drei Tiefen — vom gemeinsamen Aufsetzen bis zum Enablement deines Teams. <a href=\"https://tomo.aivantum.com/pricing.html\" target=\"_blank\" rel=\"noopener\">Die drei Tiefen ansehen →</a>";
+    if (k === "unterstuetzen") return " Auch für den Menschen, den du unterstützt: Tomo lässt sich gemeinsam einrichten — du bleibst die vertraute Brücke. <a href=\"https://tomo.aivantum.com/familie.html\" target=\"_blank\" rel=\"noopener\">Tomo für die Familie ansehen →</a>";
     return "";
   }
   function evaluate(){
