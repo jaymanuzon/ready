@@ -418,6 +418,8 @@ img,svg{max-width:100%}
       <div class="ctx-opts">
         <input type="radio" name="ctx-kontext" id="ctx-privat" value="privat"><label for="ctx-privat">Privat &amp; Alltag</label>
         <input type="radio" name="ctx-kontext" id="ctx-arbeit" value="arbeit"><label for="ctx-arbeit">Arbeit &amp; Beruf</label>
+        <input type="radio" name="ctx-kontext" id="ctx-bildung" value="bildung"><label for="ctx-bildung">Bildung &amp; Lehre (Schule, Uni, Weiterbildung)</label>
+        <input type="radio" name="ctx-kontext" id="ctx-vertraulich" value="vertraulich"><label for="ctx-vertraulich">Vertrauliche Daten (Kanzlei, Praxis, sensible Fälle)</label>
         <input type="radio" name="ctx-kontext" id="ctx-unterstuetzen" value="unterstuetzen"><label for="ctx-unterstuetzen">Ich unterstütze jemanden (Familie, Eltern, Team)</label>
         <input type="radio" name="ctx-kontext" id="ctx-neugier" value="neugier"><label for="ctx-neugier">Einfach neugierig</label>
       </div></div>
@@ -718,6 +720,8 @@ img,svg{max-width:100%}
   function ctxLine(){
     var k = ctxVal("ctx-kontext");
     if (k === "arbeit") return " Fürs Berufliche gibt es Tomo in drei Tiefen — vom gemeinsamen Aufsetzen bis zum Enablement deines Teams. <a href=\"https://tomo.aivantum.com/pricing.html\" target=\"_blank\" rel=\"noopener\">Die drei Tiefen ansehen →</a>";
+    if (k === "bildung") return " Für Schule, Uni und Weiterbildung gibt es Tomo eigens für die Bildung — didaktisch gedacht, nicht als Werkzeug-Dump. <a href=\"https://tomo.aivantum.com/education.html\" target=\"_blank\" rel=\"noopener\">Tomo für die Bildung ansehen →</a>";
+    if (k === "vertraulich") return " Bei vertraulichen Daten (Kanzlei, Praxis, sensible Fälle) läuft Tomo bewusst vertraulich — auf deinem Gerät, ohne dass Inhalte das Haus verlassen. <a href=\"https://tomo.aivantum.com/vertraulichkeit.html\" target=\"_blank\" rel=\"noopener\">Tomo vertraulich ansehen →</a>";
     if (k === "unterstuetzen") return " Auch für den Menschen, den du unterstützt: Tomo lässt sich gemeinsam einrichten — du bleibst die vertraute Brücke. <a href=\"https://tomo.aivantum.com/familie.html\" target=\"_blank\" rel=\"noopener\">Tomo für die Familie ansehen →</a>";
     return "";
   }
